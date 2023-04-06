@@ -24,4 +24,6 @@ public class Hero {
         this.characteristic = characteristic;
         this.heroStats = heroStats;
     }
+
+    public Hero() {}
 }
