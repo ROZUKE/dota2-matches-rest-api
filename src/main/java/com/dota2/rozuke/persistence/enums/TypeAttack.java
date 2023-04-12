@@ -1,4 +1,4 @@
-package com.dota2.rozuke.persistence;
+package com.dota2.rozuke.persistence.enums;
 
 public enum TypeAttack {
     MELEE,

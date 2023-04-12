@@ -2,11 +2,10 @@ package com.dota2.rozuke.persistence.mapper;
 
 import com.dota2.rozuke.domain.dto.HeroDTO;
 import com.dota2.rozuke.persistence.entity.Hero;
-import org.mapstruct.InheritInverseConfiguration;
-import org.mapstruct.Mapper;
-import org.mapstruct.Mapping;
-import org.mapstruct.Mappings;
+import org.mapstruct.*;
 import org.springframework.stereotype.Component;
+
+import java.util.List;
 
 @Mapper(componentModel = "spring")
 public interface HeroMapper {
@@ -21,6 +20,8 @@ public interface HeroMapper {
             @Mapping(source = "heroStats", target = "heroStats"),
     })
     Hero toHero (HeroDTO heroDTO);
+
+    List<HeroDTO> toHeroesDTO(List<Hero> heroes);
 
     @InheritInverseConfiguration
     HeroDTO toHeroDTO (Hero hero);

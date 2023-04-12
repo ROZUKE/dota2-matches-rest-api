@@ -1,7 +1,7 @@
 package com.dota2.rozuke.domain.dto;
 
-import com.dota2.rozuke.persistence.HeroAttribute;
-import com.dota2.rozuke.persistence.TypeAttack;
+import com.dota2.rozuke.persistence.enums.HeroAttribute;
+import com.dota2.rozuke.persistence.enums.TypeAttack;
 import com.dota2.rozuke.persistence.entity.HeroStats;
 
 public class HeroDTO {

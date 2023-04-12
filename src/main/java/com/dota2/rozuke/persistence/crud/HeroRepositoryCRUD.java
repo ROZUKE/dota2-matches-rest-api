@@ -5,6 +5,7 @@ import org.springframework.data.mongodb.repository.MongoRepository;
 
 import java.util.Optional;
 
-public interface HeroRepository extends MongoRepository<Hero, String> {
+public interface HeroRepositoryCRUD extends MongoRepository<Hero, String> {
     Optional<Hero> findByName(String s);
+
 }

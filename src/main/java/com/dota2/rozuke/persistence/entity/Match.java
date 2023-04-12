@@ -12,6 +12,7 @@ public class Match {
     private Integer id;
     @DBRef
     private Hero hero;
+    private Boolean victory;
     private Integer totalGold;
     private Integer kills;
     private Integer deaths;
