@@ -40,7 +40,6 @@ public class RozukeApplication {
 //
 //				repository.insert(match);
 //			});
-			System.out.println(heroService.getAllHeroes().get(0).getName());
 		};
 	}
 

@@ -44,8 +44,9 @@ public class HeroRepository implements HeroRepositoryDomain {
     }
 
     @Override
-    public boolean searchById(String heroId) {
-        return heroRepositoryCRUD.existsById(heroId);
+    public Optional<HeroDTO> findById(String heroId) {
+        return heroRepositoryCRUD.findById(heroId).map(hero -> mapper.toHeroDTO(hero));
+
     }
 
 }

@@ -12,6 +12,6 @@ public interface HeroRepositoryDomain {
     Optional<List<HeroDTO>> getByAttribute(String attribute);
     HeroDTO save(HeroDTO hero);
     void delete(String heroId);
-    boolean searchById(String heroId);
+    Optional<HeroDTO> findById(String heroId);
 
 }
