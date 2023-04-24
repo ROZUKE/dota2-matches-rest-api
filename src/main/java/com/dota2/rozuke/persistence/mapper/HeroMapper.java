@@ -3,7 +3,6 @@ package com.dota2.rozuke.persistence.mapper;
 import com.dota2.rozuke.domain.dto.HeroDTO;
 import com.dota2.rozuke.persistence.entity.Hero;
 import org.mapstruct.*;
-import org.springframework.stereotype.Component;
 
 import java.util.List;
 
