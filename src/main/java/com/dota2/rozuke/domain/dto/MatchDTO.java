@@ -7,7 +7,6 @@ import com.dota2.rozuke.persistence.entity.PlayStyle;
 import lombok.AllArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 
-@AllArgsConstructor
 public class MatchDTO {
 
     private Integer id;
@@ -21,16 +20,29 @@ public class MatchDTO {
     private HeroAverage heroAverage;
     private PlayStyle playStyle;
 
-    public Boolean getVictory() {
-        return victory;
+    public MatchDTO(Integer id, Hero hero, Boolean victory, Integer totalGold, Integer kills, Integer deaths, Integer assists, Item[] items, HeroAverage heroAverage, PlayStyle playStyle) {
+        this.id = id;
+        this.hero = hero;
+        this.victory = victory;
+        this.totalGold = totalGold;
+        this.kills = kills;
+        this.deaths = deaths;
+        this.assists = assists;
+        this.items = items;
+        this.heroAverage = heroAverage;
+        this.playStyle = playStyle;
     }
 
-    public void setVictory(Boolean victory) {
-        this.victory = victory;
+    public MatchDTO() {
+
     }
 
     public Integer getId() {
         return id;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
     }
 
     public Hero getHero() {
@@ -41,8 +53,12 @@ public class MatchDTO {
         this.hero = hero;
     }
 
-    public void setId(Integer id) {
-        this.id = id;
+    public Boolean getVictory() {
+        return victory;
+    }
+
+    public void setVictory(Boolean victory) {
+        this.victory = victory;
     }
 
     public Integer getTotalGold() {

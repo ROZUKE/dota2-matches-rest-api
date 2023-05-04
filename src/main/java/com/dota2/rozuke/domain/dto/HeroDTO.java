@@ -13,6 +13,17 @@ public class HeroDTO {
     private String [] characteristic;
     private HeroStats heroStats;
 
+    public HeroDTO(String name, HeroAttribute attribute, Integer mechanic, TypeAttack attack, String[] characteristic, HeroStats heroStats) {
+        this.name = name;
+        this.attribute = attribute;
+        this.mechanic = mechanic;
+        this.attack = attack;
+        this.characteristic = characteristic;
+        this.heroStats = heroStats;
+    }
+
+    public HeroDTO() {}
+
     public String getId() {
         return id;
     }
