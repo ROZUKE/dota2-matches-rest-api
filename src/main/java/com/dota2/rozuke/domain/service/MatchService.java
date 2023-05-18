@@ -37,7 +37,7 @@ public class MatchService {
 
     public MatchDTO updateMatch(int matchId, MatchDTO newMatchData) {
         MatchDTO match = matchRepository.findById(matchId).orElseThrow(()-> new RuntimeException("Match not found with ID : " + matchId));
-        match.setHero((Hero) compareMatchData(match.getHero(), newMatchData.getHero()));
+        match.setHero((HeroDTO) compareMatchData(match.getHero(), newMatchData.getHero()));
         match.setVictory((Boolean) compareMatchData(match.getVictory(), newMatchData.getVictory()));
         match.setAssists((Integer) compareMatchData(match.getAssists(), newMatchData.getAssists()));
         match.setDeaths((Integer) compareMatchData(match.getDeaths(), newMatchData.getDeaths()));

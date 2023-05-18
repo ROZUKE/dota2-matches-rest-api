@@ -29,15 +29,14 @@ public class HeroRepository implements HeroRepositoryDomain {
     @Autowired
     private HeroMapper mapper;
 
+    public HeroRepository(){}
+
     @Override
     public List<HeroDTO> getAll() {
+
         return mapper.toHeroesDTO( heroRepositoryCRUD.findAll());
     }
 
-    @Override
-    public Optional<List<HeroDTO>> getByAttribute(String attribute) {
-        return Optional.empty();
-    }
 
     @Override
     public HeroDTO save(HeroDTO hero) {

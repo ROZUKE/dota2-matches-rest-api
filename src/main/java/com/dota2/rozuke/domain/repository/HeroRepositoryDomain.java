@@ -9,7 +9,6 @@ import java.util.Optional;
 public interface HeroRepositoryDomain {
 
     List<HeroDTO> getAll();
-    Optional<List<HeroDTO>> getByAttribute(String attribute);
     HeroDTO save(HeroDTO hero);
     void delete(String heroId);
     Optional<HeroDTO> findById(String heroId);

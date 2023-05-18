@@ -10,7 +10,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 public class MatchDTO {
 
     private Integer id;
-    private Hero hero;
+    private HeroDTO hero;
     private Boolean victory;
     private Integer totalGold;
     private Integer kills;
@@ -20,7 +20,7 @@ public class MatchDTO {
     private HeroAverage heroAverage;
     private PlayStyle playStyle;
 
-    public MatchDTO(Integer id, Hero hero, Boolean victory, Integer totalGold, Integer kills, Integer deaths, Integer assists, Item[] items, HeroAverage heroAverage, PlayStyle playStyle) {
+    public MatchDTO(Integer id, HeroDTO hero, Boolean victory, Integer totalGold, Integer kills, Integer deaths, Integer assists, Item[] items, HeroAverage heroAverage, PlayStyle playStyle) {
         this.id = id;
         this.hero = hero;
         this.victory = victory;
@@ -45,11 +45,11 @@ public class MatchDTO {
         this.id = id;
     }
 
-    public Hero getHero() {
+    public HeroDTO getHero() {
         return hero;
     }
 
-    public void setHero(Hero hero) {
+    public void setHero(HeroDTO hero) {
         this.hero = hero;
     }
 
