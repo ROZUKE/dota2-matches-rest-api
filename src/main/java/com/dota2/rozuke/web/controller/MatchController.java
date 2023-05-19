@@ -33,7 +33,7 @@ public class MatchController {
 
     @PutMapping("update-match/{matchId}")
     public ResponseEntity<MatchDTO> putMatch(@PathVariable("matchId")Integer matchId, @RequestBody MatchDTO data) {
-        return new ResponseEntity<>(matchService.updateMatch(matchId, data), HttpStatus.CREATED);
+        return new ResponseEntity<>(matchService.updateMatch(matchId, data), HttpStatus.OK);
     }
 
     @DeleteMapping("/delete-match/{matchId}")
