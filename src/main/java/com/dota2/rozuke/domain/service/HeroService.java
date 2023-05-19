@@ -40,7 +40,7 @@ public class HeroService {
          hero.setAttack((TypeAttack) compareHeroData(hero.getAttack(), newHeroData.getAttack()));
          hero.setAttribute((HeroAttribute) compareHeroData(hero.getAttribute(), newHeroData.getAttribute()));
          hero.setCharacteristic((String[]) compareHeroData(hero.getCharacteristic(), newHeroData.getCharacteristic()));
-         hero.setMechanic((Integer) compareHeroData(hero.getMechanic(), newHeroData.getCharacteristic()));
+         hero.setMechanic((Integer) compareHeroData(hero.getMechanic(), newHeroData.getMechanic()));
 
           return saveNewHero(hero);
 

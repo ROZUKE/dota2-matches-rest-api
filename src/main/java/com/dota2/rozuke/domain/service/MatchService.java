@@ -7,8 +7,6 @@ import com.dota2.rozuke.persistence.repository.HeroRepository;
 import com.dota2.rozuke.persistence.repository.MatchRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-
-import java.text.DecimalFormat;
 import java.util.List;
 import java.util.Optional;
 
