@@ -9,10 +9,7 @@ import com.dota2.rozuke.persistence.enums.TypeAttack;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.test.autoconfigure.web.client.RestClientTest;
 import org.springframework.http.HttpStatus;
-import org.springframework.web.bind.annotation.ResponseStatus;
-import org.springframework.web.bind.annotation.RestController;
 
 import static org.junit.jupiter.api.Assertions.*;
 
