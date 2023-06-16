@@ -1,24 +1,24 @@
-![Logo](src/main/resources/assets/image/logo.png)
+<div align="center">
+  
+  ![Logo](src/main/resources/assets/image/logo.png)
+  
+</div>
 
 ---
 
 <h4 align="center">Rest api to save and analyze my Dota 2 games</h4>
 
-<div style="display: flex; justify-content: space-around;">
 
-[![Java version](https://img.shields.io/badge/java-17.0-c55e00)](https://www.java.com/es/)
+<p align="center">
+    <a href="https://www.java.com/es/"><img src="https://img.shields.io/badge/java-17.0-c55e00" alt="Java version"></a>
+    <a href="https://spring.io/projects/spring-boot"><img src="https://img.shields.io/badge/spring-3.1.0-brightgreen" alt="Spring version"></a>
+    <a href="https://spring.io/projects/spring-security"><img src="https://img.shields.io/badge/spring_security-6.1.0-brightgreen" alt="Spring Security version"></a>
+    <a href="https://dotnet.testcontainers.org/"><img src="https://img.shields.io/badge/testcontainers-1.18.0-0c94aa" alt="Testcontainers version"></a>
+    <a href="https://www.docker.com/"><img src="https://img.shields.io/badge/docker-20.10.22-086dd7" alt="Docker version"></a>
+    <a href="https://hub.docker.com/_/mongo"><img src="https://img.shields.io/badge/mongo-6.0.6-00ed64" alt="MongoDB version"></a>
+</p>
 
-[![Spring version](https://img.shields.io/badge/spring-3.1.0-brightgreen)](https://spring.io/projects/spring-boot)
 
-[![Spring security version](https://img.shields.io/badge/spring_security-6.1.0-brightgreen)](https://spring.io/projects/spring-security)
-
-[![testcontainers version](https://img.shields.io/badge/testcontainers-1.18.0-0c94aa)](https://dotnet.testcontainers.org/)
-
-[![Docker version](https://img.shields.io/badge/docker-20.10.22-086dd7)](https://www.docker.com/)
-
-[![Mongo version](https://img.shields.io/badge/mongo-6.0.6-00ed64)](https://hub.docker.com/_/mongo)
-
-</div>
 
 ---
 ## Description
